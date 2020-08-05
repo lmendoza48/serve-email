@@ -1,0 +1,20 @@
+{
+  "name": "nodemailer-serve",
+  "version": "1.0.0",
+  "description": "email",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "nodemailer": "^5.0.0",
+    "nodemon": "^1.18.9",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "node app"
+  },
+  "author": "luis mendoza",
+  "license": "ISC"
+}
