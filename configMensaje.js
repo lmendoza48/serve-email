@@ -5,16 +5,16 @@ module.exports = (formulario) => {
     var transporter = nodemailer.createTransport({
     service: 'gmail',
         auth: {
-            user: 'lmendoza@labsxd.com', // Cambialo por tu email
-            pass: 'NuevoAcceso21!' // Cambialo por tu password
+            user: 'childrenstherapy.21@gmail.com', // Cambialo por tu email
+            pass: 'Emprendimiento!21' // Cambialo por tu password
         }
     });
 
     const mailOptions = {
-        from: formulario.toMail,
-        to: 'lmendoza@yopmail.com', // Cambia esta parte por el destinatario
-        subject: formulario.asunto,
-        text: formulario.comment
+        from: 'childrenstherapy.21@gmail.com',
+        to: formulario.emailForm, // Cambia esta parte por el destinatario
+        subject: formulario.asuntForm,
+        text: formulario.comentForm
     }; 
 
     transporter.sendMail(mailOptions, function (err, info) {
